@@ -15,6 +15,8 @@ gem 'font-awesome-sass', '~> 5.0.9'
 gem 'sassc-rails'
 gem 'simple_form'
 gem 'uglifier'
+gem 'pundit'
+gem 'figaro'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
