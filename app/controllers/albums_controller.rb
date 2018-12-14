@@ -9,17 +9,17 @@ class AlbumsController < ApplicationController
     elsif current_user.admin
       @album = Album.find(params[:id])
       @year = @album.date.year
-      @user_year_albums = Album.where('extract(year from date) = ?', @year)
+      @user_year_albums = Album.where('extract(year from date) = ?', @year).order('date DESC')
     else
       @album = Album.find(params[:id])
       @year = @album.date.year
       @user_albums = Album.joins(:users_albums).where('users_albums.user' => 2)
-      @user_year_albums = @user_albums.where('extract(year from date) = ?', @year)
+      @user_year_albums = @user_albums.where('extract(year from date) = ?', @year).order('date DESC')
     end
 
     response1 = Faraday.head "https://s3.eu-west-3.amazonaws.com/photobocal/#{@year}/#{@album.tag}/#{params[:photo]}.JPG"
     response2 = Faraday.head "https://s3.eu-west-3.amazonaws.com/photobocal/#{@year}/#{@album.tag}/#{params[:photo]}.jpg"
-glup
+
     if response1.status == 200
       @photo_url = "https://s3.eu-west-3.amazonaws.com/photobocal/#{@year}/#{@album.tag}/#{params[:photo]}.JPG"
       response3 = Faraday.head "https://s3.eu-west-3.amazonaws.com/photobocal/#{@year}/#{@album.tag}/#{params[:photo].to_i+1}.JPG"

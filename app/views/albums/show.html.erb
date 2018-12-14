@@ -17,7 +17,7 @@
             <div class= "link-album">
           <% end %>
           <%= link_to album_path(album, photo: 1) do %>
-              <%= album.date %><br>
+              <%= album.date.strftime("%d/%m") %>
               <%= album.title %>
             </div>
           <% end %>

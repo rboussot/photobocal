@@ -5,7 +5,7 @@
 
         <% @years.uniq.each do |year| %>
           <div class= "col-sm-5 card-year">
-            <% album = Album.where('extract(year from date) = ?', year).take %>
+            <% album = Album.where('extract(year from date) = ?', year).last %>
             <%= link_to album_path(album, photo: 1) do %>
               <%= year %>
             <% end %>
