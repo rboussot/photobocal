@@ -26,10 +26,15 @@ class AlbumsController < ApplicationController
       @next = response3.status
     elsif response2.status == 200
       @photo_url = "https://s3.eu-west-3.amazonaws.com/photobocal/#{@year}/#{@album.tag}/#{params[:photo]}.jpg"
-      response3 = Faraday.get "https://s3.eu-west-3.amazonaws.com/photobocal/#{@year}/#{@album.tag}/#{params[:photo1].to_i+1}.jpg"
+      response3 = Faraday.get "https://s3.eu-west-3.amazonaws.com/photobocal/#{@year}/#{@album.tag}/#{params[:photo].to_i+1}.jpg"
       @next = response3.status
     else
-      redirect_to album_path(@album, photo: 1)
+      if params[:photo] > 1
+        redirect_to album_path(@album, photo: 1)
+      else
+        redirect_to root_path
+        flash.now[:alert] = "Il semblerait que l'album est mal référencé !"
+      end
     end
 
   end
