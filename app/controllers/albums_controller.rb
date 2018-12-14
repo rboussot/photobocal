@@ -17,16 +17,16 @@ class AlbumsController < ApplicationController
       @user_year_albums = @user_albums.where('extract(year from date) = ?', @year)
     end
 
-    response1 = Faraday.get "https://s3.eu-west-3.amazonaws.com/photobocal/#{@year}/#{@album.tag}/#{params[:photo]}.JPG"
-    response2 = Faraday.get "https://s3.eu-west-3.amazonaws.com/photobocal/#{@year}/#{@album.tag}/#{params[:photo]}.jpg"
+    response1 = Faraday.head "https://s3.eu-west-3.amazonaws.com/photobocal/#{@year}/#{@album.tag}/#{params[:photo]}.JPG"
+    response2 = Faraday.head "https://s3.eu-west-3.amazonaws.com/photobocal/#{@year}/#{@album.tag}/#{params[:photo]}.jpg"
 
     if response1.status == 200
       @photo_url = "https://s3.eu-west-3.amazonaws.com/photobocal/#{@year}/#{@album.tag}/#{params[:photo]}.JPG"
-      response3 = Faraday.get "https://s3.eu-west-3.amazonaws.com/photobocal/#{@year}/#{@album.tag}/#{params[:photo].to_i+1}.JPG"
+      response3 = Faraday.head "https://s3.eu-west-3.amazonaws.com/photobocal/#{@year}/#{@album.tag}/#{params[:photo].to_i+1}.JPG"
       @next = response3.status
     elsif response2.status == 200
       @photo_url = "https://s3.eu-west-3.amazonaws.com/photobocal/#{@year}/#{@album.tag}/#{params[:photo]}.jpg"
-      response3 = Faraday.get "https://s3.eu-west-3.amazonaws.com/photobocal/#{@year}/#{@album.tag}/#{params[:photo].to_i+1}.jpg"
+      response3 = Faraday.head "https://s3.eu-west-3.amazonaws.com/photobocal/#{@year}/#{@album.tag}/#{params[:photo].to_i+1}.jpg"
       @next = response3.status
     else
       if params[:photo].to_i > 1

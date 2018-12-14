@@ -31,6 +31,10 @@
 }
 
 /* Navbar link */
+.navbar-link a {
+  text-decoration: none;
+  color: #616668;
+}
 .navbar-link {
   color: #616668;
   font-size: 14px;
@@ -39,6 +43,7 @@
   background-color: transparent;
   border-color: transparent;
   padding: 0 0 0 0px;
+  text-decoration: none;
 }
 
 .navbar-link:hover {
