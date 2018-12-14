@@ -1,0 +1,89 @@
+.a {
+  color: black;
+}
+
+.margin-small {
+  margin-top: 20px;
+}
+.margin {
+  margin-top: 30px;
+}
+.margin-big {
+  margin-top: 40px;
+}
+
+.btn {
+    background-color: #A890BF;
+    border-radius: 4px;
+    width: 300px;
+    display: block;
+    margin: 30px auto;
+}
+
+.btn:hover {
+  color: black;
+}
+
+.link-reset a {
+    margin-top: -30px;
+    display: inline-block;
+    color: grey;
+    text-decoration: none;
+    position: relative;
+    float: right;
+}
+
+.link-reset a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.card-year a {
+  padding: 30px 0 0 0;
+  color: dimgrey;
+  font-size: 30px;
+  background-color: silver;
+  display: block;
+  text-align: center;
+  height: 100px;
+  text-decoration: none;
+}
+
+.card-year a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.link-album a {
+  font-size: 16px;
+  color: dimgrey;
+  padding: 20px;
+  display: block;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.link-album.selected {
+  background-color: lightgrey;
+}
+
+.link-album a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.link-nav {
+  color: silver;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+.link-nav a {
+  color: $lavande-dark;
+  text-decoration: none;
+}
+.link-nav a:hover {
+  color: black;
+  text-decoration: none;
+}

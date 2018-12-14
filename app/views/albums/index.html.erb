@@ -1,0 +1,18 @@
+<div class="home-wrapper">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-6 col-xs-offset-3"><br><br>
+
+        <%= link_to "Retour", root_path %><br><br>
+
+        <% @user_year_albums.each do |album| %>
+            <%= link_to album_path(album) do %>
+              <%= album.date %><br>
+              <%= album.title %><br>
+            <% end %>
+        <% end %>
+
+      </div>
+    </div>
+  </div>
+</div>

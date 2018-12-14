@@ -1,2 +1,17 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="home-wrapper">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-6 col-xs-offset-2"><br><br>
+
+        <% @years.uniq.each do |year| %>
+          <div class= "col-sm-5 card-year">
+            <% album = Album.where('extract(year from date) = ?', year).take %>
+            <%= link_to album_path(album, photo: 1) do %>
+              <%= year %>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

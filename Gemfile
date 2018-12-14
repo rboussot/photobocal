@@ -17,6 +17,8 @@ gem 'simple_form'
 gem 'uglifier'
 gem 'pundit'
 gem 'figaro'
+gem 'rails_admin', '~> 1.4.0'
+gem 'faraday'
 
 group :development do
   gem 'web-console', '>= 3.3.0'

@@ -1,0 +1,46 @@
+<div class="home-wrapper">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-3 col-xs-offset-1"><br><br>
+
+        <div class= "card-year">
+          <%= link_to root_path do %>
+            ◀ <%= @year %>
+          <% end %>
+        </div>
+        <div class= "margin"></div>
+
+        <% @user_year_albums.each do |album| %>
+          <% if album.id == params[:id].to_i %>
+            <div class= "link-album selected">
+          <% else %>
+            <div class= "link-album">
+          <% end %>
+          <%= link_to album_path(album, photo: 1) do %>
+              <%= album.date %><br>
+              <%= album.title %>
+            </div>
+          <% end %>
+        <% end %>
+      </div>
+
+      <div class="col-xs-7"><br><br>
+        <div class= "link-nav">
+          <% if params[:photo].to_i>1 %>
+            <%= link_to "◀", album_path(@album, photo: params[:photo].to_i-1) %>
+          <% else %>
+            ◀
+          <% end %>
+          <% if @next == 200 %>
+            <%= link_to "▶", album_path(@album, photo: params[:photo].to_i+1) %><br>
+          <% else %>
+            ▶
+          <% end %>
+        </div>
+
+        <%= image_tag @photo_url, height: '100%', width: '100%' %>
+
+      </div>
+    </div>
+  </div>
+</div>
