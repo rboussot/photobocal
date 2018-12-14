@@ -19,7 +19,7 @@ class AlbumsController < ApplicationController
 
     response1 = Faraday.head "https://s3.eu-west-3.amazonaws.com/photobocal/#{@year}/#{@album.tag}/#{params[:photo]}.JPG"
     response2 = Faraday.head "https://s3.eu-west-3.amazonaws.com/photobocal/#{@year}/#{@album.tag}/#{params[:photo]}.jpg"
-
+glup
     if response1.status == 200
       @photo_url = "https://s3.eu-west-3.amazonaws.com/photobocal/#{@year}/#{@album.tag}/#{params[:photo]}.JPG"
       response3 = Faraday.head "https://s3.eu-west-3.amazonaws.com/photobocal/#{@year}/#{@album.tag}/#{params[:photo].to_i+1}.JPG"
