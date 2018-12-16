@@ -75,7 +75,7 @@
 
 .list-albums {
   max-height: 70vh;
-  overflow: scroll;
+  overflow-y: scroll;
   border-left: solid lightgrey 5px
 }
 
@@ -116,5 +116,5 @@
 .media {
   margin: 0 0px;
   max-height: 76vh;
-  overflow: scroll;
+  overflow-y: scroll;
 }
