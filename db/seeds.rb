@@ -548,3 +548,191 @@ Album.create!(
   tag:"12-15-anniv_thomas",
   date:"15/12/2018")
 puts "."
+#
+# ===== 2017
+#
+puts "Create Albums 2017"
+Album.create!(
+  size: 31,
+  extension: "jpg",
+  title:"Arrivée à Angela Davies",
+  tag:"0103ecole",
+  date:"03/01/2017")
+puts "."
+Album.create!(
+  size: 7,
+  extension: "jpg",
+  title:"Concert de Wahé",
+  tag:"0120concert",
+  date:"20/01/2017")
+puts "."
+Album.create!(
+  size: 6,
+  extension: "jpg",
+  title:"Anniversaire de Chloé",
+  tag:"0127annivchloe",
+  date:"27/01/2017")
+puts "."
+Album.create!(
+  size: 3,
+  extension: "mp4",
+  title:"Films du meeting en hologramme",
+  tag:"0205filmsmeeting",
+  date:"05/02/2017")
+puts "."
+Album.create!(
+  size: 12,
+  extension: "jpg",
+  title:"Meeting en hologramme",
+  tag:"0205meetinghologramme",
+  date:"05/02/2017")
+puts "."
+Album.create!(
+  size: 12,
+  extension: "jpg",
+  title:"Manifestation pour la 6e République",
+  tag:"0318sixiemerepublique",
+  date:"18/03/2017")
+puts "."
+Album.create!(
+  size: 24,
+  extension: "jpg",
+  title:"Campagne présidentielle",
+  tag:"0401campagnepresidentielle",
+  date:"04/01/2017")
+puts "."
+Album.create!(
+  size: 1,
+  extension: "mp4",
+  title:"Film fin de campagne",
+  tag:"0401filmcampagne",
+  date:"01/04/2017")
+puts "."
+Album.create!(
+  size: 7,
+  extension: "jpg",
+  title:"Anniversaire de Jean-Marc",
+  tag:"0415annivjeanmarc",
+  date:"15/04/2017")
+puts "."
+Album.create!(
+  size: 48,
+  extension: "jpg",
+  title:"Vacances en Bretagne - Dinard",
+  tag:"0708dinar",
+  date:"08/07/2017")
+puts "."
+Album.create!(
+  size: 5,
+  extension: "jpg",
+  title:"Retour à Dinard après St-Malo",
+  tag:"0709retourdinar",
+  date:"09/07/2017")
+puts "."
+Album.create!(
+  size: 57,
+  extension: "jpg",
+  title:"Vacances en Bretagne - St-Malo",
+  tag:"0709stmalo",
+  date:"09/07/2017")
+puts "."
+Album.create!(
+  size: 2,
+  extension: "jpg",
+  title:"Vacances en Bretagne - St Brieuc",
+  tag:"0710stbrieuc",
+  date:"10/07/2017")
+puts "."
+Album.create!(
+  size: 11,
+  extension: "jpg",
+  title:"Côte de granit rose à côté de Guingamp",
+  tag:"0711granitrose",
+  date:"11/07/2017")
+puts "."
+Album.create!(
+  size: 21,
+  extension: "jpg",
+  title:"Vacances en Bretagne - Morlaix",
+  tag:"0711morlaix",
+  date:"11/07/2017")
+puts "."
+Album.create!(
+  size: 14,
+  extension: "jpg",
+  title:"Vacances en Bretagne - Roscoff",
+  tag:"0712roscoff",
+  date:"12/07/2017")
+puts "."
+Album.create!(
+  size: 16,
+  extension: "jpg",
+  title:"Vacances en Bretagne - Saint-Pol-de-Léon",
+  tag:"0712saintpoldeleon",
+  date:"12/07/2017")
+puts "."
+Album.create!(
+  size: 18,
+  extension: "jpg",
+  title:"Vacances en Bretagne - Brest",
+  tag:"0713brest",
+  date:"13/07/2017")
+puts "."
+Album.create!(
+  size: 33,
+  extension: "jpg",
+  title:"Vacances dans le Vercors avec Will et Blandine",
+  tag:"0819vercors",
+  date:"19/08/2017")
+puts "."
+Album.create!(
+  size: 1,
+  extension: "jpg",
+  title:"Soirée chez Laure avec Fongyei et Alice",
+  tag:"1027laurefanny",
+  date:"27/10/2017")
+puts "."
+Album.create!(
+  size: 7,
+  extension: "jpg",
+  title:"Soirée avec Audrey, John et Laure",
+  tag:"1125audreyjohnlaure",
+  date:"25/11/2017")
+puts "."
+
+Album.create!(
+  size: 3,
+  extension: "jpg",
+  title:"Noël à la maison",
+  tag:"1223noelmaison",
+  date:"23/12/2017")
+puts "."
+Album.create!(
+  size: 27,
+  extension: "jpg",
+  title:"Noël à Tours",
+  tag:"1224noeltours",
+  date:"24/12/2017")
+puts "."
+Album.create!(
+  size: 9,
+  extension: "jpg",
+  title:"Noël au Mans",
+  tag:"1225noelmans",
+  date:"24/12/2017")
+puts "."
+
+Album.create!(
+  size: 12,
+  extension: "jpg",
+  title:"Soirée lendemain de noël au Mans",
+  tag:"1226vacancesnoel",
+  date:"26/12/2017")
+puts "."
+Album.create!(
+  size: 8,
+  extension: "jpg",
+  title:"Soirée du nouvel an chez Audrey et John",
+  tag:"1231nouvelan",
+  date:"31/12/2017")
+puts "."
