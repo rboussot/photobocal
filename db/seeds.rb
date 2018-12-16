@@ -534,3 +534,17 @@ Album.create!(
   tag:"12-09-film_marianne_par_lise",
   date:"09/12/2018")
 puts "."
+Album.create!(
+  size: 51,
+  extension: "jpg",
+  title:"Naissance de Marianne",
+  tag:"11-26-naissance_marianne",
+  date:"26/11/2018")
+puts "."
+Album.create!(
+  size: 7,
+  extension: "jpg",
+  title:"Anniversaire et départ de Thomas",
+  tag:"12-15-anniv_thomas",
+  date:"15/12/2018")
+puts "."
