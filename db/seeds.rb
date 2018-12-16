@@ -14,41 +14,523 @@ puts "All users destroyed"
 Album.destroy_all
 puts "All albums destroyed"
 
-romain = User.create!(
+#
+# ================= USERS =====================
+#
+puts "Create Users"
+User.create!(
   lastname: "Boussot",
   firstname: "Romain",
   email: "rboussot@gmail.com",
   password: "mlkmlk",
   admin: true)
-puts romain
-
-cecile = User.create!(
+puts "."
+User.create!(
   lastname: "Boussot",
   firstname: "Cecile",
   email: "leierkastenmann.13@gmail.com",
   password: "mlkmlk",
+  admin: true)
+puts "."
+User.create!(
+  lastname: "Marion",
+  firstname: "Lise",
+  email: "elisabeth.marion@gmail.com",
+  password: "mlkmlk",
   admin: false)
-puts cecile
-
-travaux = Album.create!(
+puts "."
+User.create!(
+  lastname: "Marion",
+  firstname: "Jean-Yves",
+  email: "yannyvec@gmail.com",
+  password: "mlkmlk",
+  admin: false)
+puts "."
+User.create!(
+  lastname: "Boussot",
+  firstname: "Noël",
+  email: "noel.boussot@gmail.com",
+  password: "mlkmlk",
+  admin: false)
+puts "."
+User.create!(
+  lastname: "Boussot",
+  firstname: "Michèle",
+  email: "michele.boussot@gmail.com",
+  password: "mlkmlk",
+  admin: false)
+puts "."
+#
+# ================= ALBUMS =====================
+#
+# ===== 2018
+puts "Create Albums 2018"
+Album.create!(
+  size: 8,
+  extension: "JPG",
+  title:"Photos de nous",
+  tag:"01-01-nous",
+  date:"01/01/2018")
+puts "."
+Album.create!(
+  size: 17,
+  extension: "JPG",
   title:"Travaux dans l'appartement",
-  tag:"travaux",
+  tag:"01-05-travaux",
   date:"05/01/2018")
-puts travaux
-
-soiree = Album.create!(
+puts "."
+Album.create!(
+  size: 2,
+  extension: "jpg",
   title:"Soirée chez Simon et Marie",
-  tag:"soiree1",
+  tag:"03-31-simon_marie",
   date:"31/03/2018")
-puts soiree
-
-paques = Album.create!(
-  title:"Vacances de Pâques",
-  tag:"paques2018",
+puts "."
+Album.create!(
+  size: 14,
+  extension: "jpg",
+  title:"Vacances de Pâques au Mans",
+  tag:"04-01-paques",
   date:"01/04/2018")
-puts paques
-
-autorisation1 = UsersAlbum.create!(
-  user: cecile,
-  album: travaux)
-puts autorisation1
+puts "."
+Album.create!(
+  size: 5,
+  extension: "jpg",
+  title:"Couscous maison",
+  tag:"04-15-couscous",
+  date:"15/04/2018")
+puts "."
+Album.create!(
+  size: 5,
+  extension: "jpg",
+  title:"Audrey John et Anna à la maison",
+  tag:"04-21-anna",
+  date:"21/04/2018")
+puts "."
+Album.create!(
+  size: 6,
+  extension: "jpg",
+  title:"Travaux dans la cuisine",
+  tag:"04-22-cuisine",
+  date:"22/04/2018")
+puts "."
+Album.create!(
+  size: 2,
+  extension: "jpg",
+  title:"Premières images de Renardeau",
+  tag:"04-22-echographie",
+  date:"22/04/2018")
+puts "."
+Album.create!(
+  size: 3,
+  extension: "jpg",
+  title:"Annonce à Marion et Maxime",
+  tag:"04-24-annonce_marion_maxime",
+  date:"24/04/2018")
+puts "."
+Album.create!(
+  size: 5,
+  extension: "jpg",
+  title:"Annonce Marie et Simon",
+  tag:"04-25-annonce_marie_simon",
+  date:"25/04/2018")
+puts "."
+Album.create!(
+  size: 3,
+  extension: "jpg",
+  title:"Repas au Capitole",
+  tag:"04-25-capitole",
+  date:"25/04/2018")
+puts "."
+Album.create!(
+  size: 1,
+  extension: "jpg",
+  title:"Dîner en amoureux chez Ernest'inn",
+  tag:"04-25-ernestinn",
+  date:"25/04/2018")
+puts "."
+Album.create!(
+  size: 2,
+  extension: "jpg",
+  title:"Annonce Jeanne",
+  tag:"04-26-annonce_jeanne",
+  date:"26/04/2018")
+puts "."
+Album.create!(
+  size: 4,
+  extension: "jpg",
+  title:"Annonce Michèle et Noël",
+  tag:"04-26-annonce_parents",
+  date:"26/04/2018")
+puts "."
+Album.create!(
+  size: 2,
+  extension: "jpg",
+  title:"Annonce Lise et Jean-Yves",
+  tag:"04-27-annonce_lise_jy",
+  date:"27/04/2018")
+puts "."
+Album.create!(
+  size: 2,
+  extension: "jpg",
+  title:"Point de rendez-vous pour la manifestation",
+  tag:"05-05-rdv_manif",
+  date:"05/05/2018")
+puts "."
+Album.create!(
+  size: 2,
+  extension: "jpg",
+  title:"Selfies maison",
+  tag:"05-09-selfies_maison",
+  date:"09/05/2018")
+puts "."
+Album.create!(
+  size: 2,
+  extension: "jpg",
+  title:"Soirée chez Faustine",
+  tag:"05-10-chez_faustine",
+  date:"10/05/2018")
+puts "."
+Album.create!(
+  size: 10,
+  extension: "jpg",
+  title:"Réunion insoumis chez Sophie",
+  tag:"05-14-reunion_insoumis",
+  date:"14/05/2018")
+puts "."
+Album.create!(
+  size: 12,
+  extension: "jpg",
+  title:"Anniversaire de Raymonde au Capitole",
+  tag:"05-19-anniv_raymonde",
+  date:"19/05/2018")
+puts "."
+Album.create!(
+  size: 10,
+  extension: "jpg",
+  title:"Anniversaire de Raymonde au Mans",
+  tag:"05-20-anniv_raymonde",
+  date:"20/05/2018")
+puts "."
+Album.create!(
+  size: 2,
+  extension: "jpg",
+  title:"Soirée Barbara et Mathieu",
+  tag:"05-20-barbara_mathieu",
+  date:"20/05/2018")
+puts "."
+Album.create!(
+  size: 12,
+  extension: "jpg",
+  title:"Marée populaire",
+  tag:"05-26-maree_populaire",
+  date:"26/05/2018")
+puts "."
+Album.create!(
+  size: 6,
+  extension: "jpg",
+  title:"Petits plats maison",
+  tag:"06-20-plats_maison",
+  date:"20/06/2018")
+puts "."
+Album.create!(
+  size: 10,
+  extension: "jpg",
+  title:"Concert Wahé",
+  tag:"06-22-wahe",
+  date:"22/06/2018")
+puts "."
+Album.create!(
+  size: 2,
+  extension: "mp4",
+  title:"Films du concert Wahé",
+  tag:"06-22-films_wahe",
+  date:"22/06/2018")
+puts "."
+Album.create!(
+  size: 5,
+  extension: "jpg",
+  title:"Week-end au Mans",
+  tag:"06-30-we_mans",
+  date:"30/06/2018")
+puts "."
+Album.create!(
+  size: 10,
+  extension: "jpg",
+  title:"Travaux pour la chambre de Renardeau",
+  tag:"07-04-travaux_chambre_renardeau",
+  date:"04/07/2018")
+puts "."
+Album.create!(
+  size: 137,
+  extension: "jpg",
+  title:"Vacances à Bruxelles jusqu'au 11 juillet",
+  tag:"07-07-bruxelles_jusq11",
+  date:"07/07/2018")
+puts "."
+Album.create!(
+  size: 82,
+  extension: "jpg",
+  title:"Vacances à Bruges jusqu'au 14 juillet",
+  tag:"07-11-bruges_jusq14",
+  date:"11/07/2018")
+puts "."
+Album.create!(
+  size: 1,
+  extension: "mp4",
+  title:"Film de Bruges",
+  tag:"07-11-film-bruges",
+  date:"11/07/2018")
+puts "."
+Album.create!(
+  size: 36,
+  extension: "jpg",
+  title:"Vacances à Lille jusqu'au 16 juillet",
+  tag:"07-14-lille_jusq16",
+  date:"04/07/2018")
+puts "."
+Album.create!(
+  size: 1,
+  extension: "mp4",
+  title:"Film finale coupe du monde à Lille",
+  tag:"07-14-film_lille",
+  date:"04/07/2018")
+puts "."
+Album.create!(
+  size: 5,
+  extension: "jpg",
+  title:"Soirée avec Simon et Marie",
+  tag:"07-20-simon_marie",
+  date:"20/07/2018")
+puts "."
+Album.create!(
+  size: 14,
+  extension: "jpg",
+  title:"Fête pour le Master de Jean-Yves",
+  tag:"07-21-master_jy",
+  date:"21/07/2018")
+puts "."
+Album.create!(
+  size: 2,
+  extension: "jpg",
+  title:"Soirée avec Barbara et Mathieu",
+  tag:"07-22-barbara_mathieu",
+  date:"22/07/2018")
+puts "."
+Album.create!(
+  size: 7,
+  extension: "jpg",
+  title:"Anniversaire de Roxane",
+  tag:"07-28-anniv_roxane",
+  date:"28/07/2018")
+puts "."
+Album.create!(
+  size: 8,
+  extension: "jpg",
+  title:"Travaux appartement avec Lise et Jean-Yves",
+  tag:"08-04-travaux_avec_lise_jy",
+  date:"04/08/2018")
+puts "."
+Album.create!(
+  size: 6,
+  extension: "jpg",
+  title:"Chambre de Renardeau",
+  tag:"08-07-chambre_renardeau",
+  date:"07/08/2018")
+puts "."
+Album.create!(
+  size: 1,
+  extension: "jpg",
+  title:"Soirée avec Laure et Gauvain",
+  tag:"08-12-laure_gauvain",
+  date:"12/08/2018")
+puts "."
+Album.create!(
+  size: 8,
+  extension: "jpg",
+  title:"Chambre de Renardeau",
+  tag:"08-17-chambre_renardeau",
+  date:"17/08/2018")
+puts "."
+Album.create!(
+  size: 1,
+  extension: "jpg",
+  title:"Soirée avec Audrey et John",
+  tag:"08-21-audrey_john",
+  date:"21/08/2018")
+puts "."
+Album.create!(
+  size: 2,
+  extension: "jpg",
+  title:"Week-end au Mans",
+  tag:"08-23-we_mans",
+  date:"23/08/2018")
+puts "."
+Album.create!(
+  size: 12,
+  extension: "jpg",
+  title:"Anniversaire de Maman à Tours",
+  tag:"08-24-anniv_michele_jusq26",
+  date:"24/08/2018")
+puts "."
+Album.create!(
+  size: 4,
+  extension: "mp4",
+  title:"Films de l'anniversaire de Maman",
+  tag:"08-24-films_anniv_michele",
+  date:"24/08/2018")
+puts "."
+Album.create!(
+  size: 24,
+  extension: "JPG",
+  title:"Anniversaire de Maman (photos de Luc)",
+  tag:"08-24-anniv_michele_par_luc",
+  date:"24/08/2018")
+puts "."
+Album.create!(
+  size: 26,
+  extension: "JPG",
+  title:"Anniversaire de Maman (photos de lise)",
+  tag:"08-24-anniv_michele_par_lise",
+  date:"24/08/2018")
+puts "."
+Album.create!(
+  size: 4,
+  extension: "jpg",
+  title:"Départ de Sélim pour la Bretagne",
+  tag:"09-01-depart_selim",
+  date:"01/09/2018")
+puts "."
+Album.create!(
+  size: 6,
+  extension: "jpg",
+  title:"Déménagement à Louise Michel",
+  tag:"09-01-louise_michel",
+  date:"01/09/2018")
+puts "."
+Album.create!(
+  size: 12,
+  extension: "jpg",
+  title:"Anniversaire de Cécile",
+  tag:"09-15-anniv_cecile",
+  date:"15/09/2018")
+puts "."
+Album.create!(
+  size: 56,
+  extension: "JPG",
+  title:"Anniversaire de Cécile (photos de Lise)",
+  tag:"09-15-anniv_cecile_par_lise",
+  date:"15/09/2018")
+puts "."
+Album.create!(
+  size: 5,
+  extension: "JPG",
+  title:"Photos à la maison",
+  tag:"09-28-maison",
+  date:"28/09/2018")
+puts "."
+Album.create!(
+  size: 11,
+  extension: "JPG",
+  title:"Week-end avec Lise et Jean-Yves",
+  tag:"10-05-we_lise_jy",
+  date:"05/10/2018")
+puts "."
+Album.create!(
+  size: 3,
+  extension: "jpg",
+  title:"Réunion Insoumis chez Sophie",
+  tag:"10-11-reunion_insoumis",
+  date:"11/10/2018")
+puts "."
+Album.create!(
+  size: 2,
+  extension: "jpg",
+  title:"Anniversaire de mariage",
+  tag:"10-24-anniv_mariage",
+  date:"24/10/2018")
+puts "."
+Album.create!(
+  size: 12,
+  extension: "JPG",
+  title:"Journée Pomochamp avec Papy et Mamie",
+  tag:"10-27-pomochamp",
+  date:"27/10/2018")
+puts "."
+Album.create!(
+  size: 7,
+  extension: "JPG",
+  title:"Tests nouvel appareil photo",
+  tag:"10-28-appareil_photo",
+  date:"28/10/2018")
+puts "."
+Album.create!(
+  size: 8,
+  extension: "JPG",
+  title:"Soirée Thomas et Magdalena",
+  tag:"11-09-thomas_magdalena",
+  date:"09/11/2018")
+puts "."
+Album.create!(
+  size: 6,
+  extension: "MP4",
+  title:"Films de la grossesse de Cécile",
+  tag:"11-11-grossesse",
+  date:"11/11/2018")
+puts "."
+Album.create!(
+  size: 23,
+  extension: "JPG",
+  title:"Marianne à la maternité",
+  tag:"11-27-marianne_maternite",
+  date:"27/11/2018")
+puts "."
+Album.create!(
+  size: 24,
+  extension: "JPG",
+  title:"Marianne à la maternité (photos de Lise)",
+  tag:"11-28-marianne_maternite_lise",
+  date:"28/11/2018")
+puts "."
+Album.create!(
+  size: 3,
+  extension: "mp4",
+  title:"Marianne à la maternité (films de Lise)",
+  tag:"11-28-films_marianne_maternite_lise",
+  date:"28/11/2018")
+puts "."
+Album.create!(
+  size: 4,
+  extension: "JPG",
+  title:"Marianne (photos de papa)",
+  tag:"12-01-marianne_par_noel",
+  date:"01/12/2018")
+puts "."
+Album.create!(
+  size: 34,
+  extension: "JPG",
+  title:"Marianne première semaine",
+  tag:"12-02-marianne_premiere_semaine",
+  date:"02/12/2018")
+puts "."
+Album.create!(
+  size: 7,
+  extension: "JPG",
+  title:"Marianne et Lise et Jean-Yves",
+  tag:"12-07-marianne_lise_jy",
+  date:"07/12/2018")
+puts "."
+Album.create!(
+  size: 32,
+  extension: "JPG",
+  title:"Marianne (photos de Lise)",
+  tag:"12-09-marianne_par_lise",
+  date:"09/12/2018")
+puts "."
+Album.create!(
+  size: 1,
+  extension: "mp4",
+  title:"Marianne (film de Lise)",
+  tag:"12-09-film_marianne_par_lise",
+  date:"09/12/2018")
+puts "."

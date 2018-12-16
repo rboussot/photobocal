@@ -73,6 +73,12 @@
   color: black;
 }
 
+.list-albums {
+  max-height: 500px;
+  overflow: scroll;
+  border-left: solid lightgrey 5px
+}
+
 .link-nav {
   color: silver;
   text-align: center;
@@ -87,4 +93,28 @@
 .link-nav a:hover {
   color: black;
   text-decoration: none;
+}
+.num {
+  color: $lavande-dark;
+}
+
+.link-nav-small {
+  color: $lavande-dark;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+.link-nav-small a {
+  color: $lavande-dark;
+  text-decoration: none;
+}
+.link-nav-small a:hover {
+  color: black;
+  text-decoration: none;
+}
+.media {
+  margin: 0 0px;
+  max-height: 600px;
+  overflow: scroll;
 }

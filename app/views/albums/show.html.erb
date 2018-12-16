@@ -9,36 +9,57 @@
           <% end %>
         </div>
         <div class= "margin"></div>
-
-        <% @user_year_albums.each do |album| %>
-          <% if album.id == params[:id].to_i %>
-            <div class= "link-album selected">
-          <% else %>
-            <div class= "link-album">
+        <div class= "list-albums">
+          <% @user_year_albums.each do |album| %>
+            <% if album.id == params[:id].to_i %>
+              <div class= "link-album selected">
+            <% else %>
+              <div class= "link-album">
+            <% end %>
+            <%= link_to album_path(album, 1) do %>
+                <%= album.date.strftime("%d/%m") %>
+                <%= album.title %>
+              </div>
+            <% end %>
           <% end %>
-          <%= link_to album_path(album, photo: 1) do %>
-              <%= album.date.strftime("%d/%m") %>
-              <%= album.title %>
-            </div>
-          <% end %>
-        <% end %>
-      </div>
+          </div>
+        </div>
 
       <div class="col-xs-7"><br><br>
+
         <div class= "link-nav">
-          <% if params[:photo].to_i>1 %>
-            <%= link_to "◀", album_path(@album, photo: params[:photo].to_i-1) %>
+          <% if params[:format].to_i>1 %>
+            <%= link_to "◀", album_path(@album, params[:format].to_i-1) %>
           <% else %>
             ◀
           <% end %>
-          <% if @next == 200 %>
-            <%= link_to "▶", album_path(@album, photo: params[:photo].to_i+1) %><br>
+            <span class= "num"><%= params[:format] %></span>
+          <% if params[:format].to_i < @album.size %>
+            <%= link_to "▶", album_path(@album, params[:format].to_i+1) %><br>
           <% else %>
             ▶
           <% end %>
         </div>
 
-        <%= image_tag @photo_url, height: '100%', width: '100%' %>
+        <div class= "media">
+          <% if @album.extension == "mp4" || @album.extension == "MP4" || @album.extension == "mov" || @album.extension == "MOV" %>
+            <%= video_tag (@media_url), controls: true, width: '800' %>
+          <% else %>
+            <%= image_tag @media_url, height: '100%', width: '100%' %>
+          <% end %>
+        </div>
+
+        <div class= "link-nav-small">
+          <% nb = 1 %>
+          <% while nb <= @album.size %>
+              <% if nb == params[:format].to_i %>
+                <%= "[#{nb}]" %>
+              <% else %>
+                <%= link_to nb, album_path(@album, nb) %>
+              <% end %>
+            <% nb += 1 %>
+          <% end %>
+        </div>
 
       </div>
     </div>
