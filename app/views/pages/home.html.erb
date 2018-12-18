@@ -2,10 +2,10 @@
 <div class="home-wrapper">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-xs-6 col-xs-offset-2"><br><br>
+      <div class="col-xs-8 col-xs-offset-2"><br><br>
 
         <% @years.uniq.sort.reverse.each do |year| %>
-          <div class= "col-sm-5 card-year">
+          <div class= "col-xs-4 card-year">
             <% if current_user.admin %>
               <% album = Album.where(year: year).last %>
               <%= link_to album_path(album, 1) do %>

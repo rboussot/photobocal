@@ -22,42 +22,56 @@ User.create!(
   lastname: "Boussot",
   firstname: "Romain",
   email: "rboussot@gmail.com",
-  password: "mlkmlk",
+  password: "goodvibrations",
   admin: true)
 puts "."
 User.create!(
   lastname: "Boussot",
   firstname: "Cecile",
   email: "leierkastenmann.13@gmail.com",
-  password: "mlkmlk",
+  password: "goodvibrations",
   admin: true)
 puts "."
 User.create!(
   lastname: "Marion",
   firstname: "Lise",
   email: "elisabeth.marion@gmail.com",
-  password: "mlkmlk",
+  password: "goodvibrations",
   admin: false)
 puts "."
 User.create!(
   lastname: "Marion",
   firstname: "Jean-Yves",
   email: "yannyvec@gmail.com",
-  password: "mlkmlk",
+  password: "goodvibrations",
   admin: false)
 puts "."
 User.create!(
   lastname: "Boussot",
   firstname: "Noël",
   email: "noel.boussot@gmail.com",
-  password: "mlkmlk",
+  password: "goodvibrations",
   admin: false)
 puts "."
 User.create!(
   lastname: "Boussot",
   firstname: "Michèle",
   email: "michele.boussot@gmail.com",
-  password: "mlkmlk",
+  password: "goodvibrations",
+  admin: false)
+puts "."
+User.create!(
+  lastname: "Boussot",
+  firstname: "Estelle",
+  email: "boussotestelle@gmail.com",
+  password: "goodvibrations",
+  admin: false)
+puts "."
+User.create!(
+  lastname: "Marion",
+  firstname: "Roxane",
+  email: "marionroxane@gmail.com",
+  password: "goodvibrations",
   admin: false)
 puts "."
 #
@@ -932,4 +946,878 @@ Album.create!(
   day:"31",
   month:"12",
   year:"2017")
+puts "."
+#
+# ===== 2016
+#
+puts "Create Albums 2016"
+Album.create!(
+  size: 4,
+  extension: "mp4",
+  title:"Films des Nuits Debout",
+  tag:"0505filmsnuitsdebout",
+  day:"05",
+  month:"05",
+  year:"2016")
+puts "."
+Album.create!(
+  size: 4,
+  extension: "jpg",
+  title:"Nuits Debout",
+  tag:"0505nuitsdebout",
+  day:"05",
+  month:"05",
+  year:"2016")
+puts "."
+Album.create!(
+  size: 2,
+  extension: "mp4",
+  title:"Films du concert de Lucheras",
+  tag:"0624filmlucheras",
+  day:"24",
+  month:"06",
+  year:"2016")
+puts "."
+Album.create!(
+  size: 1,
+  extension: "jpg",
+  title:"Concert de Lucheras",
+  tag:"0624lucheras",
+  day:"24",
+  month:"06",
+  year:"2016")
+puts "."
+Album.create!(
+  size: 1,
+  extension: "mp4",
+  title:"Film à Tours",
+  tag:"0625filmtours",
+  day:"25",
+  month:"06",
+  year:"2016")
+puts "."
+Album.create!(
+  size: 9,
+  extension: "jpg",
+  title:"Séjour à Tours",
+  tag:"0625tours",
+  day:"25",
+  month:"06",
+  year:"2016")
+puts "."
+Album.create!(
+  size: 8,
+  extension: "jpg",
+  title:"Mariage de Sophia et Issam",
+  tag:"0806mariagesofia",
+  day:"06",
+  month:"08",
+  year:"2016")
+puts "."
+Album.create!(
+  size: 1,
+  extension: "mp4",
+  title:"Films du musée de Lyon",
+  tag:"1025filmslyon",
+  day:"25",
+  month:"10",
+  year:"2016")
+puts "."
+Album.create!(
+  size: 17,
+  extension: "jpg",
+  title:"Voyage de Noces à Lyon",
+  tag:"1025lyon",
+  day:"25",
+  month:"10",
+  year:"2016")
+puts "."
+Album.create!(
+  size: 51,
+  extension: "jpg",
+  title:"Voyage de Noces à Arles",
+  tag:"1027arles",
+  day:"27",
+  month:"10",
+  year:"2016")
+puts "."
+Album.create!(
+  size: 10,
+  extension: "jpg",
+  title:"Fin du voyage de Noces à Lyon",
+  tag:"1030retourlyon",
+  day:"30",
+  month:"10",
+  year:"2016")
+puts "."
+Album.create!(
+  size: 20,
+  extension: "jpg",
+  title:"Photos de nous",
+  tag:"1112nous",
+  day:"12",
+  month:"11",
+  year:"2016")
+puts "."
+Album.create!(
+  size: 23,
+  extension: "jpg",
+  title:"Anniversaire de lise",
+  tag:"1126annivlise",
+  day:"26",
+  month:"11",
+  year:"2016")
+puts "."
+Album.create!(
+  size: 3,
+  extension: "jpg",
+  title:"Chez Barbara et Mathieu",
+  tag:"1126barbaramathieu",
+  day:"26",
+  month:"11",
+  year:"2016")
+puts "."
+Album.create!(
+  size: 11,
+  extension: "jpg",
+  title:"Vacances de Noël au Mans",
+  tag:"1220noelaumans",
+  day:"20",
+  month:"12",
+  year:"2016")
+puts "."
+Album.create!(
+  size: 39,
+  extension: "jpg",
+  title:"Visite de l'Abbaye de l'Epau",
+  tag:"1222abbayeepau",
+  day:"22",
+  month:"12",
+  year:"2016")
+puts "."
+Album.create!(
+  size: 1,
+  extension: "jpg",
+  title:"Soirée au Mulligan's",
+  tag:"1223mulligans",
+  day:"23",
+  month:"12",
+  year:"2016")
+puts "."
+Album.create!(
+  size: 6,
+  extension: "jpg",
+  title:"Déjeuner au Capitole avec les parents",
+  tag:"1224capitole",
+  day:"24",
+  month:"12",
+  year:"2016")
+puts "."
+Album.create!(
+  size: 10,
+  extension: "jpg",
+  title:"Jour de Noël en famille",
+  tag:"1224jourdenoel",
+  day:"24",
+  month:"12",
+  year:"2016")
+puts "."
+Album.create!(
+  size: 17,
+  extension: "jpg",
+  title:"Diverses sorties au Mans",
+  tag:"1225sortiesaumans",
+  day:"25",
+  month:"12",
+  year:"2016")
+puts "."
+#
+# ===== 2015
+#
+puts "Create Albums 2015"
+Album.create!(
+  size: 2,
+  extension: "jpg",
+  title:"Galette des rois",
+  tag:"0124galette",
+  day:"24",
+  month:"01",
+  year:"2015")
+puts "."
+Album.create!(
+  size: 9,
+  extension: "jpg",
+  title:"Soirée au Saint Flaceau avec Barbara et Mathieu",
+  tag:"0131saintflaceau",
+  day:"31",
+  month:"01",
+  year:"2015")
+puts "."
+Album.create!(
+  size: 94,
+  extension: "JPG",
+  title:"Pot de départ de Gigi et Shuting",
+  tag:"0218departgigishuting",
+  day:"18",
+  month:"02",
+  year:"2015")
+puts "."
+Album.create!(
+  size: 9,
+  extension: "jpg",
+  title:"Déjeuner parents à Sartrouville",
+  tag:"0314parentssartrouville",
+  day:"14",
+  month:"03",
+  year:"2015")
+puts "."
+Album.create!(
+  size: 3,
+  extension: "jpg",
+  title:"Concert de Clinamen au Chêne",
+  tag:"0405clinamenchene",
+  day:"05",
+  month:"04",
+  year:"2015")
+puts "."
+Album.create!(
+  size: 5,
+  extension: "jpg",
+  title:"Travaux dans l'appartement",
+  tag:"0426travauxappart",
+  day:"26",
+  month:"04",
+  year:"2015")
+puts "."
+Album.create!(
+  size: 7,
+  extension: "jpg",
+  title:"Fête du travail à Sartrouville",
+  tag:"0501fetedutravail",
+  day:"01",
+  month:"05",
+  year:"2015")
+puts "."
+Album.create!(
+  size: 5,
+  extension: "jpg",
+  title:"Préparation du mariage",
+  tag:"0705preparationmariage",
+  day:"05",
+  month:"07",
+  year:"2015")
+puts "."
+Album.create!(
+  size: 1,
+  extension: "JPG",
+  title:"Tests de cravate pour le mariage",
+  tag:"0707cravatemariage",
+  day:"07",
+  month:"07",
+  year:"2015")
+puts "."
+Album.create!(
+  size: 15,
+  extension: "jpg",
+  title:"Les Chimères au Mans",
+  tag:"0717chimeres",
+  day:"17",
+  month:"07",
+  year:"2015")
+puts "."
+Album.create!(
+  size: 12,
+  extension: "jpg",
+  title:"Les Rouanneraies",
+  tag:"0720rouennerais",
+  day:"20",
+  month:"07",
+  year:"2015")
+puts "."
+Album.create!(
+  size: 8,
+  extension: "jpg",
+  title:"Pique-nique sur les quais de la Sarthe",
+  tag:"0724picniquequais",
+  day:"24",
+  month:"07",
+  year:"2015")
+puts "."
+Album.create!(
+  size: 34,
+  extension: "jpg",
+  title:"Vacances dans le Vercors",
+  tag:"0729vercors",
+  day:"29",
+  month:"07",
+  year:"2015")
+puts "."
+Album.create!(
+  size: 7,
+  extension: "jpg",
+  title:"Soirée sur les quais de Seine",
+  tag:"0806quaisparis",
+  day:"06",
+  month:"08",
+  year:"2015")
+puts "."
+Album.create!(
+  size: 59,
+  extension: "jpg",
+  title:"Accrobranche avec Mathieu",
+  tag:"1007accrobranche",
+  day:"07",
+  month:"10",
+  year:"2015")
+puts "."
+Album.create!(
+  size: 48,
+  extension: "jpg",
+  title:"Soirée EVG de Mathieu",
+  tag:"1007soireeevgmathieu",
+  day:"07",
+  month:"10",
+  year:"2015")
+puts "."
+#
+# ===== 2014
+#
+puts "Create Albums 2014"
+Album.create!(
+  size: 5,
+  extension: "jpg",
+  title:"Appartement de Sartrouville",
+  tag:"0112appartementsartrouville",
+  day:"12",
+  month:"01",
+  year:"2014")
+puts "."
+Album.create!(
+  size: 5,
+  extension: "png",
+  title:"Séminaire Vodeclic",
+  tag:"0124seminairevodeclic",
+  day:"24",
+  month:"01",
+  year:"2014")
+puts "."
+Album.create!(
+  size: 1,
+  extension: "jpg",
+  title:"Déménagement de Will",
+  tag:"0214demenagementwill",
+  day:"14",
+  month:"02",
+  year:"2014")
+puts "."
+Album.create!(
+  size: 39,
+  extension: "jpg",
+  title:"Anniversaire de Mamie à Bures",
+  tag:"0316annivmamie",
+  day:"16",
+  month:"03",
+  year:"2014")
+puts "."
+Album.create!(
+  size: 5,
+  extension: "mp4",
+  title:"Films anniversaire de Mamie",
+  tag:"0316filmsannivmamie",
+  day:"16",
+  month:"03",
+  year:"2014")
+puts "."
+Album.create!(
+  size: 4,
+  extension: "mp4",
+  title:"Films soirée au Gobelet d'Argent",
+  tag:"0317filmsgobelet",
+  day:"17",
+  month:"03",
+  year:"2014")
+puts "."
+Album.create!(
+  size: 8,
+  extension: "jpg",
+  title:"Diverses photos d'identité",
+  tag:"0320photosid",
+  day:"20",
+  month:"03",
+  year:"2014")
+puts "."
+Album.create!(
+  size: 26,
+  extension: "jpg",
+  title:"Anniversaire de Renan",
+  tag:"0322annivrenan",
+  day:"22",
+  month:"03",
+  year:"2014")
+puts "."
+Album.create!(
+  size: 38,
+  extension: "jpg",
+  title:"Concert de Clinamen au Baroc",
+  tag:"0330clinamenbaroc",
+  day:"30",
+  month:"03",
+  year:"2014")
+puts "."
+Album.create!(
+  size: 1,
+  extension: "mp4",
+  title:"Film concert Clinamen au Baroc",
+  tag:"0330filmclinamen",
+  day:"30",
+  month:"03",
+  year:"2014")
+puts "."
+Album.create!(
+  size: 5,
+  extension: "jpg",
+  title:"Travaux à Sartrouville",
+  tag:"0406travauxsartrouville",
+  day:"06",
+  month:"04",
+  year:"2014")
+puts "."
+Album.create!(
+  size: 4,
+  extension: "mp4",
+  title:"Films de la manifestation contre l'austérité",
+  tag:"0412filmsmanifausterite",
+  day:"12",
+  month:"04",
+  year:"2014")
+puts "."
+Album.create!(
+  size: 22,
+  extension: "jpg",
+  title:"Manifestation contre l'austérité",
+  tag:"0412manifausterite",
+  day:"12",
+  month:"04",
+  year:"2014")
+puts "."
+Album.create!(
+  size: 12,
+  extension: "jpg",
+  title:"Mariage de Marion et Maxime",
+  tag:"0426mariagemarionmaxime",
+  day:"26",
+  month:"04",
+  year:"2014")
+puts "."
+Album.create!(
+  size: 8,
+  extension: "jpg",
+  title:"Soirée chez Laure",
+  tag:"0504soireelaure",
+  day:"04",
+  month:"05",
+  year:"2014")
+puts "."
+Album.create!(
+  size: 2,
+  extension: "jpg",
+  title:"Buttes Chaumont",
+  tag:"0517buteschaumont",
+  day:"17",
+  month:"05",
+  year:"2014")
+puts "."
+Album.create!(
+  size: 3,
+  extension: "jpg",
+  title:"Anniversaire de Marie",
+  tag:"0531annivmarie",
+  day:"31",
+  month:"05",
+  year:"2014")
+puts "."
+Album.create!(
+  size: 3,
+  extension: "jpg",
+  title:"Soirée avec Barbara et Mathieu",
+  tag:"0531barbaramathieu",
+  day:"31",
+  month:"05",
+  year:"2014")
+puts "."
+Album.create!(
+  size: 16,
+  extension: "jpg",
+  title:"Concert de Clinamen au Gobelet d'Argent",
+  tag:"0607clinamengobelet",
+  day:"07",
+  month:"06",
+  year:"2014")
+puts "."
+Album.create!(
+  size: 3,
+  extension: "mp4",
+  title:"Film du concert de Clinamen au Gobelet d'Argent",
+  tag:"0607filmsclinamengobelet",
+  day:"07",
+  month:"06",
+  year:"2014")
+puts "."
+Album.create!(
+  size: 5,
+  extension: "jpg",
+  title:"Fête des pères au Mans",
+  tag:"0621fetedesperes",
+  day:"21",
+  month:"06",
+  year:"2014")
+puts "."
+Album.create!(
+  size: 14,
+  extension: "jpg",
+  title:"Amélie et Célia au Gobelet d'Argent",
+  tag:"0822gobeletameliecelia",
+  day:"22",
+  month:"08",
+  year:"2014")
+puts "."
+Album.create!(
+  size: 8,
+  extension: "jpg",
+  title:"Costumes de mariage pour Mathieu",
+  tag:"1229costumesmathieu",
+  day:"29",
+  month:"12",
+  year:"2014")
+puts "."
+Album.create!(
+  size: 33,
+  extension: "jpg",
+  title:"Nouvel an",
+  tag:"1231nouvelan",
+  day:"31",
+  month:"12",
+  year:"2014")
+puts "."
+#
+# ===== 2013
+#
+puts "Create Albums 2013"
+Album.create!(
+  size: 23,
+  extension: "jpg",
+  title:"Naissance d'Alice",
+  tag:"0417alice",
+  day:"17",
+  month:"04",
+  year:"2013")
+puts "."
+Album.create!(
+  size: 3,
+  extension: "jpg",
+  title:"Manifestation pour la 6e République",
+  tag:"0505sixiemerepublique",
+  day:"05",
+  month:"05",
+  year:"2013")
+puts "."
+Album.create!(
+  size: 48,
+  extension: "jpg",
+  title:"Vacances à Rennes",
+  tag:"0518rennes",
+  day:"18",
+  month:"05",
+  year:"2013")
+puts "."
+Album.create!(
+  size: 73,
+  extension: "jpg",
+  title:"Anniversaire de Roxane",
+  tag:"0728annivroxane",
+  day:"28",
+  month:"07",
+  year:"2013")
+puts "."
+Album.create!(
+  size: 19,
+  extension: "jpg",
+  title:"Chartres avec Barbara et Mathieu",
+  tag:"0803chartres",
+  day:"03",
+  month:"08",
+  year:"2013")
+puts "."
+Album.create!(
+  size: 71,
+  extension: "jpg",
+  title:"Bretagne - Dinan",
+  tag:"0820dinan",
+  day:"20",
+  month:"08",
+  year:"2013")
+puts "."
+Album.create!(
+  size: 1,
+  extension: "mp4",
+  title:"Bretagne - film Dinan",
+  tag:"0820filmdinan",
+  day:"20",
+  month:"08",
+  year:"2013")
+puts "."
+Album.create!(
+  size: 3,
+  extension: "JPG",
+  title:"Bretagne - Guingamp",
+  tag:"0821guinguamp",
+  day:"21",
+  month:"08",
+  year:"2013")
+puts "."
+Album.create!(
+  size: 13,
+  extension: "jpg",
+  title:"Bretagne - Le Faou",
+  tag:"0822lefaou",
+  day:"22",
+  month:"08",
+  year:"2013")
+puts "."
+Album.create!(
+  size: 5,
+  extension: "jpg",
+  title:"Bretagne - Lorient",
+  tag:"0822lorient",
+  day:"22",
+  month:"08",
+  year:"2013")
+puts "."
+Album.create!(
+  size: 18,
+  extension: "jpg",
+  title:"Bretagne - Concarneau",
+  tag:"0823concarneau",
+  day:"23",
+  month:"08",
+  year:"2013")
+puts "."
+Album.create!(
+  size: 33,
+  extension: "jpg",
+  title:"Bretagne - Quimper",
+  tag:"0823quimper",
+  day:"23",
+  month:"08",
+  year:"2013")
+puts "."
+Album.create!(
+  size: 19,
+  extension: "jpg",
+  title:"Bretagne - Douarnenez",
+  tag:"0824douarnenez",
+  day:"24",
+  month:"08",
+  year:"2013")
+puts "."
+Album.create!(
+  size: 50,
+  extension: "jpg",
+  title:"Bretagne - Locronan",
+  tag:"0824locronan",
+  day:"24",
+  month:"08",
+  year:"2013")
+puts "."
+Album.create!(
+  size: 41,
+  extension: "jpg",
+  title:"Bretagne - Pont-Aven",
+  tag:"0824pontaven",
+  day:"24",
+  month:"08",
+  year:"2013")
+puts "."
+Album.create!(
+  size: 47,
+  extension: "jpg",
+  title:"Bretagne - Carnac",
+  tag:"0825carnac",
+  day:"25",
+  month:"08",
+  year:"2013")
+puts "."
+Album.create!(
+  size: 60,
+  extension: "jpg",
+  title:"Bretagne - Josselin",
+  tag:"0825josselin",
+  day:"25",
+  month:"08",
+  year:"2013")
+puts "."
+Album.create!(
+  size: 22,
+  extension: "jpg",
+  title:"Anniversaire de Cécile",
+  tag:"0913annivcecile",
+  day:"13",
+  month:"09",
+  year:"2013")
+puts "."
+Album.create!(
+  size: 4,
+  extension: "jpg",
+  title:"Déménagement à Sartrouville",
+  tag:"1031demenagementsartrouville",
+  day:"31",
+  month:"10",
+  year:"2013")
+puts "."
+Album.create!(
+  size: 5,
+  extension: "jpg",
+  title:"Concert au Club Gambetta",
+  tag:"1108concertclubgambetta",
+  day:"08",
+  month:"11",
+  year:"2013")
+puts "."
+Album.create!(
+  size: 3,
+  extension: "jpg",
+  title:"Anniversaire de Lise",
+  tag:"1123annivlise",
+  day:"23",
+  month:"11",
+  year:"2013")
+puts "."
+Album.create!(
+  size: 11,
+  extension: "jpg",
+  title:"Anniversaire de Romain",
+  tag:"1213annivromain",
+  day:"13",
+  month:"12",
+  year:"2013")
+puts "."
+Album.create!(
+  size: 2,
+  extension: "MOV",
+  title:"Concert à Vodeclic",
+  tag:"1218concertvodeclic",
+  day:"1812",
+  month:"",
+  year:"2013")
+puts "."
+Album.create!(
+  size: 31,
+  extension: "jpg",
+  title:"Pot de Noël à Vodeclic",
+  tag:"1218potdenoelvodeclic",
+  day:"18",
+  month:"12",
+  year:"2013")
+puts "."
+Album.create!(
+  size: 31,
+  extension: "jpg",
+  title:"Noël au Mans",
+  tag:"1225noel",
+  day:"25",
+  month:"12",
+  year:"2013")
+puts "."
+#
+# ===== 2012
+#
+puts "Create Albums 2012"
+Album.create!(
+  size: 10,
+  extension: "JPG",
+  title:"État des lieux à Maisons-Laffitte",
+  tag:"0505etatdeslieuxmaisonslaffitte",
+  day:"05",
+  month:"05",
+  year:"2012")
+puts "."
+Album.create!(
+  size: 20,
+  extension: "jpg",
+  title:"Vacances à Avignon",
+  tag:"0801avignon",
+  day:"01",
+  month:"08",
+  year:"2012")
+puts "."
+Album.create!(
+  size: 7,
+  extension: "jpg",
+  title:"Opération des dents de sagesse de Cécile",
+  tag:"1030dentsdesagesse",
+  day:"30",
+  month:"10",
+  year:"2012")
+puts "."
+Album.create!(
+  size: 54,
+  extension: "jpg",
+  title:"Nouvel an au Mans",
+  tag:"1231nouvelan",
+  day:"31",
+  month:"12",
+  year:"2012")
+puts "."
+#
+# ===== 2011
+#
+puts "Create Albums 2011"
+Album.create!(
+  size: 40,
+  extension: "JPG",
+  title:"Photos promo de Clinamen",
+  tag:"0120promoclinamen",
+  day:"20",
+  month:"01",
+  year:"2011")
+puts "."
+Album.create!(
+  size: 7,
+  extension: "jpg",
+  title:"Mariage de Karen et Nicolas",
+  tag:"0730mariagekarennicolas",
+  day:"30",
+  month:"07",
+  year:"2011")
+puts "."
+Album.create!(
+  size: 45,
+  extension: "jpg",
+  title:"Mariage de Laetitia et Stéphane",
+  tag:"0820mariagelaetitiastephane",
+  day:"20",
+  month:"08",
+  year:"2011")
+puts "."
+#
+# ===== 2010 et avant
+#
+puts "Create Albums 2010 et avant"
+Album.create!(
+  size: 25,
+  extension: "jpg",
+  title:"Divers avant 2010",
+  tag:"0101divers",
+  day:"01",
+  month:"01",
+  year:"2010 et avant")
+puts "."
+Album.create!(
+  size: 1,
+  extension: "mp4",
+  title:"Concert Kinsey Bazar",
+  tag:"0102concertkinseybazar2007",
+  day:"02",
+  month:"01",
+  year:"2010 et avant")
 puts "."
