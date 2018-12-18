@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_15_152839) do
+ActiveRecord::Schema.define(version: 2018_12_12_110700) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -18,11 +18,13 @@ ActiveRecord::Schema.define(version: 2018_12_15_152839) do
   create_table "albums", force: :cascade do |t|
     t.string "title"
     t.string "tag"
-    t.date "date"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
     t.integer "size", default: 10
     t.string "extension", default: "jpg"
+    t.string "day"
+    t.string "month"
+    t.string "year"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|

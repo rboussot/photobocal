@@ -5,12 +5,6 @@
 
         <%= link_to "Retour", root_path %><br><br>
 
-        <% @user_year_albums.each do |album| %>
-            <%= link_to album_path(album) do %>
-              <%= album.date %><br>
-              <%= album.title %><br>
-            <% end %>
-        <% end %>
 
       </div>
     </div>

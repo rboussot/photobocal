@@ -19,6 +19,8 @@ gem 'pundit'
 gem 'figaro'
 gem 'rails_admin', '~> 1.4.0'
 gem 'faraday'
+gem 'bootstrap'
+gem 'jquery-rails'
 
 group :development do
   gem 'web-console', '>= 3.3.0'

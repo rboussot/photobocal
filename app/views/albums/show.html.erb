@@ -2,7 +2,6 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-xs-3 col-xs-offset-1"><br><br>
-
         <div class= "card-year">
           <%= link_to root_path do %>
             ◀ <%= @year %>
@@ -17,16 +16,14 @@
               <div class= "link-album">
             <% end %>
             <%= link_to album_path(album, 1) do %>
-                <%= album.date.strftime("%d/%m") %>
-                <%= album.title %>
+              <%= "#{album.day}/#{album.month}/#{album.year}" %><br>
+              <%=album.title %>
               </div>
             <% end %>
           <% end %>
           </div>
         </div>
-
       <div class="col-xs-7"><br><br>
-
         <div class= "link-nav">
           <% if params[:format].to_i>1 %>
             <%= link_to "◀", album_path(@album, params[:format].to_i-1) %>
@@ -40,15 +37,21 @@
             ▶
           <% end %>
         </div>
-
+          <%= render 'shared/share' %>
+          <% if current_user.admin %>
+            <div data-toggle = "modal" data-target = "#ShareAlbum" class = "share-album" >
+              ⇪
+            </div>
+          <% end %>
         <div class= "media">
           <% if @album.extension == "mp4" || @album.extension == "MP4" || @album.extension == "mov" || @album.extension == "MOV" %>
             <%= video_tag (@media_url), controls: true, width: '800' %>
           <% else %>
-            <%= image_tag @media_url, height: '100%', width: '100%' %>
+            <%= link_to @media_url, target: "_blank" do %>
+              <%= image_tag @media_url, height: '100%', width: '100%' %>
+            <% end %>
           <% end %>
         </div>
-
         <div class= "link-nav-small">
           <% nb = 1 %>
           <% while nb <= @album.size %>
@@ -60,7 +63,6 @@
             <% nb += 1 %>
           <% end %>
         </div>
-
       </div>
     </div>
   </div>

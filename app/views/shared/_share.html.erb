@@ -1,0 +1,17 @@
+<div class="modal fade" id="ShareAlbum" tabindex="-1" role="dialog" aria-labelledby="ShareAlbumLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <div class= "list-users">
+            <%= simple_form_for(@users_album) do |f| %>
+              <%= f.error_notification %>
+              <%= f.association :user, collection: User.where(admin: false), as: :check_boxes, label: "Partager avec", checked: @already_shared %>
+              <%= f.input_field :album, as: :hidden, value: @album.id %>
+              <%= f.submit class: "btn", value: "Partager"%>
+            <% end %>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -3,13 +3,13 @@
 }
 
 .margin-small {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .margin {
   margin-top: 30px;
 }
 .margin-big {
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 .btn {
@@ -41,6 +41,7 @@
 
 .card-year a {
   padding: 30px 0 0 0;
+  margin-bottom: 20px;
   color: dimgrey;
   font-size: 30px;
   background-color: silver;
@@ -51,6 +52,24 @@
 }
 
 .card-year a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.add-album {
+  margin: 0px 15px;
+  padding: 30px 0 0 0;
+  color: dimgrey;
+  font-size: 30px;
+  background-color: silver;
+  display: block;
+  text-align: center;
+  height: 100px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.add-album:hover {
   color: black;
   text-decoration: none;
 }
@@ -116,5 +135,19 @@
 .media {
   margin: 0 0px;
   max-height: 76vh;
+  overflow-y: scroll;
+}
+.share-album {
+  position: absolute;
+  right: 20px;
+  top: 40px;
+  cursor: pointer;
+  color: silver;
+  text-align: right;
+  font-size: 30px;
+  text-decoration: none;
+}
+.list-users {
+  max-height: 500px;
   overflow-y: scroll;
 }

@@ -8,7 +8,7 @@ class PagesController < ApplicationController
       @albums = Album.all
       @years = []
       @albums.each do |album|
-        @years << album.date.year
+        @years << album.year
       end
     else
       @users_albums = UsersAlbum.where(user: current_user)
@@ -17,8 +17,10 @@ class PagesController < ApplicationController
       @users_albums.each do |users_album|
         album = users_album.album
         @albums << album
-        @years << album.date.year
+        @years << album.year
       end
     end
+    @new_album = Album.new
   end
+
 end

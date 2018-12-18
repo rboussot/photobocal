@@ -1,0 +1,7 @@
+          <h3>Ajouter</h3><br>
+          <%= simple_form_for(@album) do |f| %>
+            <%= f.error_notification %>
+              <%= f.input :title, label: "Titre du nouvel album" %>
+              <%= f.submit class: "btn", value: "Sauvegarder"%>
+            </div>
+          <% end %>
