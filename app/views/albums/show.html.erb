@@ -44,7 +44,7 @@
             </div>
           <% end %>
         <div class= "media">
-          <% if @album.extension == "mp4" || @album.extension == "MP4" || @album.extension == "mov" || @album.extension == "MOV" || @album.extension == "avi" || @album.extension == "AVI" %>
+          <% if @album.extension == "mp4" || @album.extension == "MP4" || @album.extension == "mov" || @album.extension == "MOV" || @album.extension == "mp3" %>
             <%= video_tag (@media_url), controls: true, width: '800' %>
           <% else %>
             <%= link_to @media_url, target: "_blank" do %>
