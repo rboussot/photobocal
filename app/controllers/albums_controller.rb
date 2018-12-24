@@ -32,7 +32,7 @@ class AlbumsController < ApplicationController
       @slength = @string.length
       @pext = @string.index(".", 50)+1
       @pyear = @string.index("/",40)+1
-      @psize = @string.index("/", 51)+1
+      @psize = @string.index("/", 60)+1
       @ptag = @string.index("/",46)+1
     @album.tag = @string[@ptag...@psize-1]
     @album.year = @string[@pyear...@ptag-1]
