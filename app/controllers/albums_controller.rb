@@ -12,13 +12,13 @@ class AlbumsController < ApplicationController
     elsif current_user.admin
       @album = Album.find(params[:id])
       @year = @album.year
-      @user_year_albums = Album.where(year: @year).order('month DESC').order('day DESC')
+      @user_year_albums = Album.where(year: @year).order('tag DESC')
       @media_url = "https://s3.eu-west-3.amazonaws.com/photobocal/#{@year}/#{@album.tag}/#{params[:format]}.#{@album.extension}"
     else
       @album = Album.find(params[:id])
       @year = @album.year
       @user_albums = Album.joins(:users_albums).where('users_albums.user' => current_user)
-      @user_year_albums = @user_albums.where(year: @year).order('month DESC').order('day DESC')
+      @user_year_albums = @user_albums.where(year: @year).order('tag DESC')
       @media_url = "https://s3.eu-west-3.amazonaws.com/photobocal/#{@year}/#{@album.tag}/#{params[:format]}.#{@album.extension}"
     end
     @users_album = UsersAlbum.new
