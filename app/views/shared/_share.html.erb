@@ -8,10 +8,10 @@
               <%= f.error_notification %>
               <%= f.association :user, collection: User.where(admin: false), label: "Partager avec", as: :check_boxes, checked: @already_shared %>
               <%= f.input_field :album, as: :hidden, value: @album.id %>
+          </div>
               <%= f.submit class: "btn", value: "Partager album"%>
               <%= f.submit class: "btn", value: "Partager tout"%>
             <% end %>
-          </div>
       </div>
     </div>
   </div>
