@@ -24,7 +24,7 @@
           </div>
         </div>
       <div class="col-xs-7"><br><br>
-        <div class= "link-nav">
+        <span class= "link-nav">
           <% if params[:format].to_i>1 %>
             <%= link_to "◀", album_path(@album, params[:format].to_i-1) %>
           <% else %>
@@ -32,17 +32,17 @@
           <% end %>
             <span class= "num"><%= params[:format] %></span>
           <% if params[:format].to_i < @album.size %>
-            <%= link_to "▶", album_path(@album, params[:format].to_i+1) %><br>
+            <%= link_to "▶", album_path(@album, params[:format].to_i+1) %>
           <% else %>
             ▶
           <% end %>
-        </div>
-          <%= render 'shared/share' %>
           <% if current_user.admin %>
-            <div data-toggle = "modal" data-target = "#ShareAlbum" class = "share-album" >
-              ⇪
-            </div>
+            <span class= "share-album">
+              <%= render 'shared/share' %>
+              <span data-toggle = "modal" data-target = "#ShareAlbum">⇮</span>
+            </span>
           <% end %>
+        </span>
         <div class= "media">
           <% if @album.extension == "mp4" || @album.extension == "MP4" || @album.extension == "mov" || @album.extension == "MOV" || @album.extension == "mp3" %>
             <%= video_tag (@media_url), controls: true, width: '800' %>

@@ -1,0 +1,30 @@
+<%= render 'shared/addalbum' %>
+<div class="home-wrapper">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-8 col-xs-offset-2"><br><br>
+
+        <% @years.uniq.sort.reverse.each do |year| %>
+          <div class= "col-xs-4 card-year">
+            <% if current_user.admin %>
+              <% album = Album.where(year: year).last %>
+              <%= link_to album_path(album, 1) do %>
+                <%= year %>
+              <% end %>
+            <% else %>
+              <% album = Album.joins(:users_albums).where('users_albums.user' => current_user).where(year: year).order("month DESC").order("day DESC").first %>
+                <%= link_to album_path(album, 1) do %>
+                  <%= year %>
+                <% end %>
+            <% end %>
+          </div>
+        <% end %>
+          <% if current_user.admin %>
+            <div data-toggle = "modal" data-target = "#AddAlbum" class= "col-sm-1 add-album" >
+              +
+            </div>
+          <% end %>
+      </div>
+    </div>
+  </div>
+</div>

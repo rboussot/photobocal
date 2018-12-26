@@ -1,4 +1,4 @@
-<div class="modal fade" id="ShareAlbum" tabindex="-1" role="dialog" aria-labelledby="ShareAlbumLabel">
+<div class="modal fade" id="ShareAll" tabindex="-1" role="dialog" aria-labelledby="ShareAllLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-body">
@@ -6,9 +6,8 @@
           <div class= "list-users">
             <%= simple_form_for(@users_album) do |f| %>
               <%= f.error_notification %>
-              <%= f.association :user, collection: User.where(admin: false), label: "Partager avec", as: :check_boxes, checked: @already_shared %>
+              <%= f.association :user, collection: User.where(admin: false), as: :check_boxes, label: "Partager tout #{@year}", checked: @already_shared %>
               <%= f.input_field :album, as: :hidden, value: @album.id %>
-              <%= f.submit class: "btn", value: "Partager album"%>
               <%= f.submit class: "btn", value: "Partager tout"%>
             <% end %>
           </div>

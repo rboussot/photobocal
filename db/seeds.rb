@@ -8,67 +8,58 @@
 #
 # ================= USERS =====================
 #
-puts "Create new Users"
 User.create!(
-  lastname: "Boussot",
-  firstname: "Romain",
-  email: "rboussot@gmail.com",
-  password: "goodvibrations",
-  admin: true)
-puts "."
-
-User.create!(
-  lastname: "Boussot",
-  firstname: "Romain",
+  lastname: "Coulon",
+  firstname: "Mathieu",
   email: "mcoulon87@gmail.com",
   password: "goodvibrations",
   admin: true)
 puts "."
 User.create!(
-  lastname: "Boussot",
-  firstname: "Romain",
+  lastname: "Dubois",
+  firstname: "Maxime",
   email: "maxime.dubois1@free.fr",
   password: "goodvibrations",
   admin: true)
 puts "."
 User.create!(
-  lastname: "Boussot",
-  firstname: "Romain",
+  lastname: "Conchon",
+  firstname: "Amélie",
   email: "a.conchon.lablanche@gmail.com",
   password: "goodvibrations",
   admin: true)
 puts "."
 User.create!(
-  lastname: "Boussot",
-  firstname: "Romain",
+  lastname: "Cattacin",
+  firstname: "Brigitte",
   email: "cattacin.b@gmail.com",
   password: "goodvibrations",
   admin: true)
 puts "."
 User.create!(
-  lastname: "Boussot",
-  firstname: "Romain",
+  lastname: "Pelletier",
+  firstname: "Bernard",
   email: "bernard31pel@hotmail.fr",
   password: "goodvibrations",
   admin: true)
 puts "."
 User.create!(
-  lastname: "Boussot",
-  firstname: "Romain",
+  lastname: "Cubillé",
+  firstname: "Sophie",
   email: "sophie.cubille@free.fr",
   password: "goodvibrations",
   admin: true)
 puts "."
 User.create!(
-  lastname: "Boussot",
-  firstname: "Romain",
+  lastname: "Ponsot",
+  firstname: "Hélène",
   email: "helene.ponsot@free.fr",
   password: "goodvibrations",
   admin: true)
 puts "."
 User.create!(
-  lastname: "Boussot",
-  firstname: "Romain",
+  lastname: "Gaëlle",
+  firstname: "Lefirlec",
   email: "galinette22@gmail.com",
   password: "goodvibrations",
   admin: true)
@@ -203,6 +194,13 @@ User.create!(
   lastname: "Boussot",
   firstname: "Romain",
   email: "smokinglaslo@gmail.com",
+  password: "goodvibrations",
+  admin: true)
+puts "."
+User.create!(
+  lastname: "Girejensky",
+  firstname: "Laetitia",
+  email: "titipoussin2004@hotmail.com",
   password: "goodvibrations",
   admin: true)
 puts "."
