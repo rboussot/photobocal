@@ -65,134 +65,134 @@ User.create!(
   admin: true)
 puts "."
 User.create!(
-  lastname: "Boussot",
-  firstname: "Romain",
+  lastname: "Chavaroux",
+  firstname: "Christophe",
   email: "chrispos@hotmail.com",
   password: "goodvibrations",
   admin: true)
 puts "."
 User.create!(
-  lastname: "Boussot",
-  firstname: "Romain",
+  lastname: "Godard",
+  firstname: "Luc",
   email: "godardluc@orange.fr",
   password: "goodvibrations",
   admin: true)
 puts "."
 User.create!(
-  lastname: "Boussot",
-  firstname: "Romain",
+  lastname: "Duême",
+  firstname: "Laure",
   email: "laure.dueme@gmail.com",
   password: "goodvibrations",
   admin: true)
 puts "."
 User.create!(
-  lastname: "Boussot",
-  firstname: "Romain",
+  lastname: "Duême",
+  firstname: "Cécile",
   email: "cecile.dueme@wanadoo.fr",
   password: "goodvibrations",
   admin: true)
 puts "."
 User.create!(
-  lastname: "Boussot",
-  firstname: "Romain",
+  lastname: "Hervy",
+  firstname: "William",
   email: "hervywilliam@yahoo.fr",
   password: "goodvibrations",
   admin: true)
 puts "."
 User.create!(
-  lastname: "Boussot",
-  firstname: "Romain",
+  lastname: "Villatel",
+  firstname: "Carole",
   email: "c.villatel1@orange.fr",
   password: "goodvibrations",
   admin: true)
 puts "."
 User.create!(
-  lastname: "Boussot",
-  firstname: "Romain",
+  lastname: "Chauvet",
+  firstname: "Claude",
   email: "claude.chauvet@intel.com",
   password: "goodvibrations",
   admin: true)
 puts "."
 User.create!(
-  lastname: "Boussot",
-  firstname: "Romain",
+  lastname: "Billiard",
+  firstname: "Pierre-Emmanuel",
   email: "bibs38000@hotmail.com",
   password: "goodvibrations",
   admin: true)
 puts "."
 User.create!(
-  lastname: "Boussot",
-  firstname: "Romain",
+  lastname: "Billiard",
+  firstname: "Nicolas",
   email: "nicolasbilliard.1978@free.fr",
   password: "goodvibrations",
   admin: true)
 puts "."
 User.create!(
-  lastname: "Boussot",
-  firstname: "Romain",
+  lastname: "Billiard",
+  firstname: "Karen",
   email: "karen.billiard@free.fr",
   password: "goodvibrations",
   admin: true)
 puts "."
 User.create!(
-  lastname: "Boussot",
-  firstname: "Romain",
+  lastname: "Jean-Michel",
+  firstname: "Ponsot",
   email: "poipoi.kom@free.fr",
   password: "goodvibrations",
   admin: true)
 puts "."
 User.create!(
-  lastname: "Boussot",
-  firstname: "Romain",
+  lastname: "Julien",
+  firstname: "Nicole",
   email: "nicole.julien20@gmail.com",
   password: "goodvibrations",
   admin: true)
 puts "."
 User.create!(
-  lastname: "Boussot",
-  firstname: "Romain",
+  lastname: "Julien",
+  firstname: "Jean-Stéphane",
   email: "jeanstephane.julien@gmail.com",
   password: "goodvibrations",
   admin: true)
 puts "."
 User.create!(
-  lastname: "Boussot",
-  firstname: "Romain",
+  lastname: "Foulquier",
+  firstname: "Jean-Michel",
   email: "jean-michel.foulquier@neuf.fr",
   password: "goodvibrations",
   admin: true)
 puts "."
 User.create!(
-  lastname: "Boussot",
-  firstname: "Romain",
+  lastname: "Kinsky",
+  firstname: "Nicolas",
   email: "nicolas-marie.kinsky@wanadoo.fr",
   password: "goodvibrations",
   admin: true)
 puts "."
 User.create!(
-  lastname: "Boussot",
-  firstname: "Romain",
+  lastname: "Billiard",
+  firstname: "Claire",
   email: "claire-billiard@orange.fr",
   password: "goodvibrations",
   admin: true)
 puts "."
 User.create!(
-  lastname: "Boussot",
-  firstname: "Romain",
+  lastname: "Chauvet",
+  firstname: "Nicole",
   email: "nicole.chauvet@hotmail.fr",
   password: "goodvibrations",
   admin: true)
 puts "."
 User.create!(
-  lastname: "Boussot",
-  firstname: "Romain",
+  lastname: "Petrachi",
+  firstname: "Thomas",
   email: "tpetrachizago@gmail.com",
   password: "goodvibrations",
   admin: true)
 puts "."
 User.create!(
-  lastname: "Boussot",
-  firstname: "Romain",
+  lastname: "Seillans",
+  firstname: "Thomas",
   email: "smokinglaslo@gmail.com",
   password: "goodvibrations",
   admin: true)
@@ -201,6 +201,20 @@ User.create!(
   lastname: "Girejensky",
   firstname: "Laetitia",
   email: "titipoussin2004@hotmail.com",
+  password: "goodvibrations",
+  admin: true)
+puts "."
+User.create!(
+  lastname: "Lamé",
+  firstname: "Stéphane",
+  email: "stephane.lame@live.fr",
+  password: "goodvibrations",
+  admin: true)
+puts "."
+User.create!(
+  lastname: "Pizzera",
+  firstname: "Yvette",
+  email: "yf@stratecollege.fr",
   password: "goodvibrations",
   admin: true)
 puts "."
