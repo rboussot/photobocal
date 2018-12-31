@@ -6,6 +6,6 @@ class User < ApplicationRecord
   has_many :users_albums
   has_many :albums, through: :users_albums
   def name
-    email
+    fullname
   end
 end
