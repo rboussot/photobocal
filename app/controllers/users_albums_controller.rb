@@ -37,8 +37,8 @@ end
 
 private
 
-def users_album_params
-  params.require(:users_album).permit(:user, :album)
-end
+  def users_album_params
+    params.require(:users_album).permit(:user, :album)
+  end
 
 end

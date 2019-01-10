@@ -13,6 +13,7 @@ class User < ApplicationRecord
   rails_admin do
     list do
       field :fullname
+      field :email
     end
   end
 
@@ -27,6 +28,7 @@ class User < ApplicationRecord
   rails_admin do
     show do
       field :fullname
+      field :email
     end
   end
 end
